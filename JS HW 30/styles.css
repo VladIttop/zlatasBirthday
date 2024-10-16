@@ -1,0 +1,46 @@
+.timer {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+body {
+  background-color: pink;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.field {
+  background-color: lavender;
+  color: black;
+  min-width: 75px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (min-width: 319px) {
+  .timer {
+    flex-direction: column;
+  }
+
+  .field {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .timer {
+    flex-direction: row;
+  }
+
+  .field {
+    padding: 40px 10px;
+  }
+}
